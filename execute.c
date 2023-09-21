@@ -31,8 +31,8 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				};
 	unsigned int i;
 	char *op;
-	i = 0;
 
+	i = 0;
 	op = strtok(content, " \n\t");
 	if (op && op[0] == '#')
 		return (0);
