@@ -2,9 +2,9 @@
 
 /**
  * execute - executes the opcode
- * @stack: head linked list - stack
- * @counter: line_counter
- * @file: poiner to monty file
+ * @stack: head linked list stack
+ * @counter: line counter
+ * @file: pointer to monty.
  * @content: line content
  *
  */
@@ -29,8 +29,9 @@ int execute(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"stack", f_stack},
 				{NULL, NULL}
 				};
-	unsigned int i = 0;
+	unsigned int i;
 	char *op;
+	i = 0;
 
 	op = strtok(content, " \n\t");
 	if (op && op[0] == '#')
