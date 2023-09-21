@@ -11,7 +11,8 @@
 void f_add(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
-	int len = 0, aux;
+	int len, aux;
+	len = 0;
 
 	h = *head;
 	while (h)
