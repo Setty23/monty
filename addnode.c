@@ -3,7 +3,7 @@
 /**
  * addnode - adds node to the head stack
  * @head: head of stack
- * @nw: new value
+ * @n: new value
  *
  */
 
@@ -20,7 +20,7 @@ void addnode(stack_t **head, int nw)
 	}
 	if (aux)
 		aux->prev = new_node;
-	new_node->nw = nw;
+	new_node->n = n;
 	new_node->next = *head;
 	new_node->prev = NULL;
 	*head = new_node;
